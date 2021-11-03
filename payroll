@@ -1,0 +1,34 @@
+#include <stdio.h>
+int main(){
+printf(" \tGitonga's Factory worker's payment\n");
+int norm = 1000;
+int hours;
+int tax1 = 0.3*norm;
+int extra = 1.5*1000;
+int tax2 = 0.3 *extra;
+int Net = norm - tax1;
+int Net2 = extra - tax2;
+printf("enter hours worked by worker:\n");
+scanf("%d",&hours);
+if(hours<=40){
+	printf("Payment for worker is:");
+	printf("%d \n",norm);
+	printf("Tax is:\n");
+	printf("%d \n",tax1);
+	printf("Net Income for normal hours is:\n");
+printf("%d",Net);
+}	
+else
+{
+printf("Payment for overwork is:");
+printf("%d \n",extra);	
+printf("The tax is: \n");
+printf("%d \n",tax2);
+printf("Net Income after extra hours is:\n");
+printf("%d",Net2);
+}
+
+
+
+return 0;
+}
